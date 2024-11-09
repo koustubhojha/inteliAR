@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERI_AR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 2rem;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .gallery .photo-box {
+            background-color: #ddd;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .photo-box {
+            background-color: #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 250px;
+            /* Increased height to accommodate text */
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 80%;
+            /* Adjusted to make space for text */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .photo-box p {
+            margin: 20px;
+            padding: 5px 0;
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>INTELI_AR</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About INTELI_AR</h2>
+        <p>This is an interior design website where users can select different interior designs and experience them in
+            augmented reality (AR).</p>
+
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <a href="sofa.html" class="photo-box">
+            <img src="sofa.png" alt="">
+            <p>Sofa</p>
+        </a>
+        <a href="couch.html" class="photo-box">
+            <img src="couch.png" alt="">
+            <p>Couch</p>
+        </a>
+        <a href="dining-table.html" class="photo-box">
+            <img src="Dinning Table.png" alt="">
+            <p>Dining Table</p>
+        </a>
+        <a href="chair.html" class="photo-box">
+            <img src="chair.png" alt="">
+            <p>Office Chair</p>
+        </a>
+        <a href="comfort-chair.html" class="photo-box">
+            <img src="comfort chair.png" alt="">
+            <p>Comfort Chair</p>
+        </a>
+        <a href="chilling-chair.html" class="photo-box">
+            <img src="brown sofa.png" alt="">
+            <p>Chilling Chair</p>
+        </a>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="about">
+        <h2>Contact Us</h2>
+        <p>Email: contact@interiar.com</p>
+    </section>
+    <!-- Footer Section -->
+    <footer style="background-color: #333; color: #fff; padding: 1.5rem; text-align: center; margin-top: 2rem;">
+        <div>
+            <a href="https://www.instagram.com" target="_blank"
+                style="color: #fff; text-decoration: none; margin: 0 1rem;">Instagram</a> |
+            <a href="https://www.twitter.com" target="_blank"
+                style="color: #fff; text-decoration: none; margin: 0 1rem;">Twitter</a> |
+            <a href="https://www.facebook.com" target="_blank"
+                style="color: #fff; text-decoration: none; margin: 0 1rem;">Facebook</a>
+        </div>
+        <div style="margin-top: 1rem;">
+            <p>Credits: <span>Developer & Designer - Koustubh Ojha</span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERI_AR - Gallery</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+        nav h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+            justify-content: center;
+        }
+        .photo-box {
+            background-color: #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 250px;
+            width: 250px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+        .photo-box img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .photo-box:hover img {
+            transform: scale(1.1);
+        }
+        .photo-box p {
+            margin: 0;
+            padding: 5px 0;
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>INTERI_AR</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section with Two Pictures -->
+    <section class="gallery">
+        <a href="https://p.plugxr.com/pGVBBd5" class="photo-box">
+            <img src="chair.png" alt="Living Room">
+            <p>View in AR</p>
+        </a>
+        <a href="kitchen.html" class="photo-box">
+            <img src="office_chairQR.png" alt="QR">
+            <p>Scan to view in AR</p>
+        </a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
+        <div style="margin-top: 1rem;">
+            <p>Credits: <span>Developer & Designer - Koustubh Ojha</span></p>
+        </div>
+    </footer>
+</body>
+</html>
